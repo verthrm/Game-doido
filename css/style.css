@@ -2,25 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-
 
 .game-board {
-     width:  95%;
-     margin: 30px auto;
-     height:  500px;
-     border: 1px solid black;
+     width:  100%;
+     margin: 0 auto;
+     height:  960px;
+     border-bottom: 60px solid rgb(95, 97, 56);
      position: relative;
-     background-color: aquamarine;
+     background: linear-gradient( #28536B, #C2948A);
      overflow: hidden;
+     font-size: 50px;
+     text-align: center;
+     color: aqua;
+     
 }
+
 .gabigol {
     width: 120px;
     position: absolute;
     bottom: 0px;
     left: 50px;
-
 }
 
 .jump {
@@ -44,7 +46,7 @@
 
 
 .mesa {
-    width:  230px;
+    width:  100px;
     position: absolute;
     bottom:  0;
     animation: mesa-anim 1.5s infinite linear;
@@ -57,3 +59,21 @@
         right: 100%;
     }
 }
+
+.nuvens {
+    width:  550px;
+    margin-top: 40px;
+    position: absolute;
+    animation: nvm 5s infinite linear;
+}
+@keyframes nvm {
+    from {
+        right: -450px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+
+
