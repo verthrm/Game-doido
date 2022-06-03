@@ -1,4 +1,59 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.game-board {
+     width:  95%;
+     margin: 30px auto;
+     height:  500px;
+     border: 1px solid black;
+     position: relative;
+     background-color: aquamarine;
+     overflow: hidden;
+}
+.gabigol {
+    width: 120px;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+
+}
+
+.jump {
+    animation: jump 800ms ease-out;
+}
+@keyframes jump {
+   0% {
+       bottom: 0;
+   }
+   50% { 
+       bottom: 140px;
+   }
+   60% {
+       bottom: 180px;
+   }
+   100% {
+       bottom: 0;
+   }
+}
+
+
+
+.mesa {
+    width:  230px;
+    position: absolute;
+    bottom:  0;
+    animation: mesa-anim 1.5s infinite linear;
+}
+@keyframes mesa-anim {
+    from {
+        right: -230px;
+    }
+    to {
+        right: 100%;
+    }
 }
