@@ -42,9 +42,6 @@
        bottom: 0;
    }
 }
-
-
-
 .mesa {
     width:  100px;
     position: absolute;
@@ -64,7 +61,7 @@
     width:  550px;
     margin-top: 40px;
     position: absolute;
-    animation: nvm 5s infinite linear;
+    animation: nvm 6s infinite linear;
 }
 @keyframes nvm {
     from {
